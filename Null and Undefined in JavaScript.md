@@ -1,5 +1,3 @@
-
-
 # Null and Undefined in JavaScript
 
 ## Table of Contents
@@ -8,16 +6,16 @@
 2. Understanding Null and Undefined
 3. Similarities and Differences
    3.1 Similarities between Null and Undefined
-       3.1.1 No Value
-       3.1.2 Falsy Values
-       3.1.3 Type
+   3.1.1 No Value
+   3.1.2 Falsy Values
+   3.1.3 Type
    3.2 Distinctions between Null and Undefined
-       3.2.1 Type Assignment
-       3.2.2 Assignment Behavior
-       3.2.3 Usage
-       3.2.4 Equality Comparison
-       3.2.5 `typeof` Operator
-       3.2.6 Arithmetic Operations
+   3.2.1 Type Assignment
+   3.2.2 Assignment Behavior
+   3.2.3 Usage
+   3.2.4 Equality Comparison
+   3.2.5 `typeof` Operator
+   3.2.6 Arithmetic Operations
 4. Conclusion
 
 ## Introduction
@@ -65,19 +63,19 @@ However, nuanced differences exist between these two data types, highlighting th
 1. **Type Assignment**: While "null" is explicitly designated by a programmer to convey the absence of value, "undefined" often points to variables lacking assigned values.
 
    ```javascript
-   let variable1;         // variable1 defaults to undefined
-   let variable2 = null;  // variable2 is explicitly assigned null
+   let variable1; // variable1 defaults to undefined
+   let variable2 = null; // variable2 is explicitly assigned null
    ```
 
 2. **Assignment Behavior**: "undefined" serves as the default value for uninitialized variables, whereas "null" is intentionally assigned to represent the absence of value.
 
    ```javascript
    if (!variable1) {
-     console.log("variable1 is falsy");  // Output: variable1 is falsy
+     console.log("variable1 is falsy"); // Output: variable1 is falsy
    }
 
    if (!variable2) {
-     console.log("variable2 is falsy");  // Output: variable2 is falsy
+     console.log("variable2 is falsy"); // Output: variable2 is falsy
    }
    ```
 
@@ -89,16 +87,16 @@ However, nuanced differences exist between these two data types, highlighting th
    }
 
    const result = getValue();
-   console.log(result);  // Output: undefined
+   console.log(result); // Output: undefined
 
    const intentionalAbsence = null;
-   console.log(intentionalAbsence);  // Output: null
+   console.log(intentionalAbsence); // Output: null
    ```
 
 4. **Behavior**: When assessed for equality, "null" and "undefined" are loosely equal (==) but not strictly equal (===), signifying the same value but distinct types.
 
    ```javascript
-   console.log(variable1 == variable2);  // Output: true
+   console.log(variable1 == variable2); // Output: true
    console.log(variable1 === variable2); // Output: false
    ```
 
@@ -112,14 +110,14 @@ However, nuanced differences exist between these two data types, highlighting th
    let nullVar = null;
 
    // Use typeof() operator on undefined variable
-   let result1 = typeof(undefinedVar);
+   let result1 = typeof undefinedVar;
 
    // Use typeof() operator on null variable
-   let result2 = typeof(nullVar);
+   let result2 = typeof nullVar;
 
    // Output the results
    console.log("Result for undefinedVar:", result1); // Should print "undefined"
-   console.log("Result for nullVar:", result2);      // Should print "object"
+   console.log("Result for nullVar:", result2); // Should print "object"
    ```
 
 6. **Arithmetic Operations**: In the realm of arithmetic operations, "undefined" returns "NaN" (Not-a-Number), whereas "null" is converted to 0 before participating in the operation.
