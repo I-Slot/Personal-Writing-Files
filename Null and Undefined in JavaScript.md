@@ -146,4 +146,4 @@ However, nuanced differences exist between these two data types, highlighting th
 
 ## Conclusion
 
-In conclusion, an in-depth comprehension of the Null and Undefined data types in JavaScript contributes to the creation of intelligible and error-free code. Throughout this article, we have spotlighted their similarities, unveiled their distinctions, and explored real-world applications for these vital data types. To solidify your understanding, engage in practical exercises that involve working
+In conclusion, an in-depth comprehension of the Null and Undefined data types in JavaScript contributes to the creation of intelligible and error-free code. Throughout this article, we have spotlighted their similarities, unveiled their distinctions, and explored real-world applications for these vital data types. To solidify your understanding, engage in practical exercises that involve working.
